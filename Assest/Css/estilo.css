@@ -108,7 +108,7 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.slidearea{
+.banner .slidearea{
     display: flex;
     height: 100%;
     justify-content: center;
@@ -187,9 +187,6 @@ header {
 .default .section-body{
     max-width: 1140px;
     margin: auto;
-    margin-bottom: 40px;
-
-
 }
 
 .default .light{
@@ -367,4 +364,230 @@ Css de area especificas.
 
 .section-projects--photoarea:hover .section-projects--photoinfo{
     display: flex;
+}
+
+.bg-team{
+    background-image: url("../media/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-team{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-team .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 20px;
+
+}
+
+.section-team .slidearea{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.section-team-area .sliders-pointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-team-area .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.section-team-area .pointer.active{
+    background-color: #B28756;
+}
+
+.section-team--avatar{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.section-team--name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+
+}
+
+.section-team--role{
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+
+
+}
+
+.section-team--social{
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-team--social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+  
+}
+
+.section-client{
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+    max-width: 650px;
+}
+
+.section-client--avatar{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-client--name{
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.section-client--role{
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.section-client--aspas{
+    margin-top: 20px;
+    object-fit: cover;
+    width: 25px;
+}
+
+.section-clients p{
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ccc;
+}
+
+.section-team--social a:hover {
+    background-color: #B28756;
+}
+
+.section-clients .sliders-pointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-clients .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.section-clients .pointer.active{
+    background-color: #B28756;
+}
+
+.default .white{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.default .white .empresa{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-img-area{    
+    padding: 50px;
+}
+
+.section-img--empresa{
+    margin-left: 70px;   
+}
+
+.section-price-area{
+    display: flex;
+    margin: auto;
+}
+
+.section-price-area .sliders{
+    width: 1000vw;
+    height: 100%;
+   
+}
+
+.section-price-area .slide{
+    width: 200px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 20px;
+
+}
+
+.section-price-area .slidearea{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    flex-direction: column;
+    padding: 30px;
 }
