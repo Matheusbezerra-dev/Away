@@ -174,10 +174,9 @@ header {
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .default .section-title{
-    font-size: 20px;
-    
-        
+    font-size: 20px;       
 }
 
 .default .section-desc{
@@ -193,32 +192,24 @@ header {
     margin: auto;
 }
 
-.default .light{
+.light{
     background-color: #f7f7f7;
 }
 
-.default .light .section-title,
-.default .light .section-body{
+.light .section-title,
+.light .section-body{
     color: #000;
 }
 
-.default .dark{
+.dark{
     background-color: #000;
 }
 
-.default .dark .section-title,
-.default .dark .section-body{
+.dark .section-title,
+.dark .section-body{
     color: #fff;
 
 }
-
-
-
-
-
-
-
-
 
 /*
 Css de area especificas.
@@ -247,8 +238,6 @@ Css de area especificas.
     line-height: 25px;
     
 }
-
-
 
 .section-services{
     display: flex;
@@ -544,12 +533,12 @@ Css de area especificas.
     background-color: #B28756;
 }
 
-.default .white{
+.white{
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 
-.default .white .empresa{
+.white .empresa{
     height: 20px;
     display: flex;
     justify-content: center;
@@ -822,7 +811,7 @@ Css de area especificas.
 .section-map{
     background-image: url(../imagens/Screenshot\ from\ 2022-01-03\ 12-25-20.png);
     background-size: cover;
-    background-position: center;
+    background-position: center;   
     padding-top: 30px;
     padding-bottom: 30px;    
 }
@@ -830,6 +819,7 @@ Css de area especificas.
 .section-map--area{
     width: 100vw;
     max-width: 1140px;
+    height: auto;
     margin: auto;
 
 }
