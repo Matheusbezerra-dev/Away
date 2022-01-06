@@ -95,6 +95,10 @@ header {
 
 }
 
+.button:hover{
+    background-color: black;
+}
+
 .banner{
     height: calc(100vh - 100px);
     background-color: #333;
