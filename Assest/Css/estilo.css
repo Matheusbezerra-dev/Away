@@ -42,6 +42,10 @@ header {
     border-radius: 50%;
 }
 
+.menu-opener{
+    display: none;
+}
+
 .menu{
     display: flex;
     flex:1;    
@@ -538,34 +542,34 @@ Css de area especificas.
     border-bottom: 1px solid #ddd;
 }
 
-.white .empresa{
-    height: 20px;
+.empresa{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex: 1;
 }
 
 .section-img-area{    
-    padding: 50px;
+    display: flex;
 }
 
 .section-img--empresa{
-    margin-left: 70px;   
+    flex: 1;
+    margin: auto;
+    margin-left: 20px; 
 }
 
 .section-price-area{
-    display: flex;
-    margin: auto;    
+    display: flex; 
 }
 
-.section-price-area .sliders:first-child{
-    margin-left: auto;
+.section-price-area .sliders{
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-.section-price-area .sliders:last-child{
-    margin-right: auto;
-}
 
 .section-price-area .slide{
     width: 220px;
@@ -862,6 +866,7 @@ footer{
     background-color: #000;
     color: #fff;
     flex-direction: column;
+    height: auto;
 }
 
 .footer-area{
@@ -936,7 +941,6 @@ footer{
 
 .footer_copy{
     border-top: 1px solid #2c2c2c;
-    height: 80px;
     line-height: 40px;
     color: #5c5c5c;
     font-size: 12px;
@@ -947,4 +951,328 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+
+
+@media (min-width:450px) and (max-width:875px){
+    .logo{
+        margin-left: 30px;
+    }
+
+    .menu-opener{
+        display: block;
+        width:45px;
+        margin-right: 30px;
+    }
+    nav{
+        display:none;
+        position:absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top:100px;
+        right: 0;
+
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 80px;
+        font-size: 17px;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menu li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .section-aboutus{
+        flex-direction: column;
+
+    }
+
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .section-aboutus--right{
+        width: auto;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .section-team{
+        max-width: 580px;
+    }
+
+    .section-price-area{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .section-price-area .sliders:first-child{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-price-area .slide{
+        min-width: 50%;
+        margin-left: 80px;
+    }
+
+    .section-price-area .sliders{
+        margin-bottom: 20px;
+    }
+    
+    .section-premium--right{
+        padding-right: 15px;
+    }
+
+    .section-premium--left{
+        padding-left: 15px;
+    }
+
+    .section-facts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-fact{
+        min-width: 50%;
+    }
+
+    .section-map{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-map--area{
+        width: auto;
+    }
+    
+    .section-map--info{
+        width: auto;
+        padding-left: 30px;
+    }
+
+    .footer-area{
+        flex-wrap: wrap;
+        margin-top: 15px;    
+    }
+
+    .footer-contact{
+        height: 150px;
+    }
+}
+
+
+@media (max-width:450px){
+
+    .logo{
+        margin-left: 30px;
+    }
+
+    .menu-opener{
+        display: block;
+        width:45px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position:absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top:100px;
+        right: 0;
+
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li a{
+        font-weight: bold;
+        height: 60px;
+        font-size: 17px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li.active a{
+        border: 0;
+        color: #B28756;
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .banner h2{
+        font-size: 17px;
+    }
+
+    .section-aboutus{
+        flex-direction: column;
+
+    }
+
+    .section-aboutus--left{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .section-aboutus--right{
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .section-aboutus--right img{
+        width: 100%;
+    }
+
+    .section-services{
+        flex-wrap: wrap;
+    }
+
+    .section-service{
+        min-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .section-team{
+        max-width: 280px;
+    }
+
+    .section-clients p{
+        font-size: 13px;
+    }
+
+    .white .empresa{
+        height: auto;
+    }
+
+    .section-img-area{
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .section-img--empresa{
+        margin: auto;
+        margin-bottom: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .section-projects--filters{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .section-projects--photo{
+        width: 320px;
+    }
+
+    .section-projects--photoarea{
+        width: 300px;
+        height: 190px;
+        object-fit: cover;
+    }
+
+    .section-price-area{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .section-price-area .sliders:first-child{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .section-price-area .slide{
+        min-width: 50%;
+        margin-left: 80px;
+    }
+
+    .section-price-area .sliders{
+        margin-bottom: 20px;
+    }
+
+    .section-premium .slidearea{
+        flex-wrap: wrap;
+    }
+    
+    .section-premium--right{
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .section-premium--left{        
+        margin: auto;
+    }
+
+    .section-facts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-fact{
+        min-width: 100%;
+    }
+
+    .section-share{
+        flex-wrap: wrap;
+    }
+    .section-share--legend{
+        margin-right: 10px;
+    }
+    
+    .section-contact{
+        max-width: 320px;
+    }
+
+    .section-map{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .section-map--area{
+        width: auto;
+    }
+    
+    .section-map--info{
+        width: auto;
+        padding-left: 30px;
+    }
+
+    .footer-area{
+        flex-wrap: wrap;
+        margin-top: 15px;    
+    }
+
+    .footer-contact{
+        height: 150px;
+    }
 }
