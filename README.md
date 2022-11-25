@@ -1,2 +1,2 @@
 ##Projeto away simulando uma pagina de venda...
-###link do projeto https://vercel.com/matheusbezerra-dev/away
+###link do projeto https://away-matheusbezerra-dev.vercel.app/
